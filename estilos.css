@@ -1,17 +1,19 @@
 body{
     background-color: #545454;
     font-family: sans-serif;
+    margin: 0;
 }
-header{
+body header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     min-height: 70px;
+    background-color: white;
+    height: 110px;
 }
 header nav{
-    margin-bottom: 20px;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    margin-right: 20px;
 }
 header nav a{
     font-weight: 550;
@@ -22,6 +24,7 @@ header nav a:hover{
 }
 .logo{
     display: flex;
+    align-items: center;
 }
 .logo img{
     height: 100px;
@@ -31,4 +34,45 @@ header nav a:hover{
     header{
         flex-direction: column;
     }
+}
+
+
+
+
+.menu{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.menu a{
+    padding-bottom: 20px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:white;
+    height: 80px;
+}
+.diseñado h1{
+    display: flex;
+    font-family: sans-serif;
+    color: #3d3d3d;
+    font-weight: 550;
+    font-style: italic;
+    font-size: medium;
+    padding-left: 20px;
+}
+.iconos i{
+    font-size: 30px;
+    margin: 0 18px;
+    align-self: center;
+}
+.iconos i:hover{
+    color: rgb(84, 84, 252);
+    transition: 400ms;
+    cursor: pointer;
 }
