@@ -1,3 +1,10 @@
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
 body{
     background-color: #545454;
     font-family: sans-serif;
@@ -22,22 +29,46 @@ header nav a{
 header nav a:hover{
     color: #afafaf;
 }
+
+
+@media screen and (max-width: 450px) {
+    body header{
+        flex-direction: column;
+        height: 60%;
+        padding-top: 5%;
+    }
+    .logo{
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .navegacion{
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 5%;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+    }
+}
+
 .logo{
     display: flex;
     align-items: center;
 }
 .logo img{
-    height: 100px;
+    height: 90%;
     margin-left: 40px;
 }
-@media (max-width:700px){
-    header{
-        flex-direction: column;
+
+@media screen and (max-width: 450px) {
+    .logo img{
+        width: 30%;
+        height: auto;
     }
 }
-
-
-
 
 .menu{
     display: flex;
@@ -49,6 +80,48 @@ header nav a:hover{
 .menu a{
     padding-bottom: 20px;
 }
+.menu a img{
+    width:100%;
+    height: auto;
+}
+
+@media screen and (max-width: 450px) {
+    .menu a{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 450px){
+    footer{
+        width: 100%;
+    }
+    .diseñado{
+        width: 40%;
+    }  
+}
+
+/*@media screen and (max-width: 250px){
+    footer{
+        flex-direction: column;
+    }
+    .diseñado{
+        width: 100%;
+        margin: 0;
+        font-size: small;
+    }
+    .iconos{
+        width: 100%;
+        margin: 0;
+        height: auto;
+        font-size: small;
+    }
+}*/
 
 footer{
     display: flex;
@@ -67,7 +140,8 @@ footer{
     padding-left: 20px;
 }
 .iconos i{
-    font-size: 30px;
+    font-size: 200%;
+    height: auto;
     margin: 0 18px;
     align-self: center;
 }
